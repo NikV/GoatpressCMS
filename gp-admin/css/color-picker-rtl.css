@@ -1,0 +1,127 @@
+.gp-color-picker {
+	width: 80px;
+}
+
+.gp-picker-container .hidden {
+	display: none;
+}
+
+.gp-color-result {
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	display: inline-block;
+	height: 22px;
+	margin: 0 0px 6px 6px;
+	position: relative;
+	top: 1px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	vertical-align: bottom;
+	display: inline-block;
+	padding-right: 30px;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.08);
+	box-shadow: 0 1px 0 rgba(0,0,0,.08);
+}
+
+.gp-color-result:after {
+	background: #f7f7f7;
+	-webkit-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;
+	border-right: 1px solid #ccc;
+	color: #555;
+	content: attr( title );
+	display: block;
+	font-size: 11px;
+	line-height: 22px;
+	padding: 0 6px;
+	position: relative;
+	left: 0;
+	text-align: center;
+	top: 0;
+	-webkit-box-shadow: inset 0 1px 0 #fff;
+	box-shadow: inset 0 1px 0 #fff;
+}
+
+.gp-color-result:hover,
+.gp-color-result:focus {
+	background: #fafafa;
+	border-color: #999;
+	color: #222;
+}
+
+.gp-color-result:hover:after,
+.gp-color-result:focus:after {
+	color: #222;
+	border-color: #aaa;
+	border-right: 1px solid #999;
+}
+
+.gp-color-result {
+	top: 0;
+}
+
+.gp-color-result.gp-picker-open:after {
+	content: attr( data-current );
+}
+
+.gp-picker-container, .gp-picker-container:active {
+	display: inline-block;
+	outline: 0;
+}
+
+.gp-color-result:focus {
+	-webkit-box-shadow:
+		0 0 0 1px #5b9dd9,
+		0 0 2px 1px rgba( 30, 140, 190, 0.8 );
+	box-shadow:
+		0 0 0 1px #5b9dd9,
+		0 0 2px 1px rgba( 30, 140, 190, 0.8 );
+}
+
+.gp-picker-open + .gp-picker-input-wrap {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.gp-picker-container .button {
+	margin-right: 6px;
+}
+
+.gp-picker-container .iris-square-slider .ui-slider-handle:focus {
+	background-color: #555
+}
+
+.gp-picker-container .iris-picker {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border-color: #dfdfdf;
+	margin-top: 6px;
+}
+
+.gp-picker-container input[type="text"].gp-color-picker {
+	width: 65px;
+	font-size: 12px;
+	font-family: monospace;
+	text-align: center;
+	line-height: 16px;
+	margin: 0;
+}
+
+.gp-picker-container input[type="text"].gp-color-picker:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.gp-picker-container input[type="text"].gp-color-picker:-moz-placeholder {
+	color: #999;
+}
+
+.gp-picker-container input[type="text"].iris-error {
+	background-color: #ffebe8;
+	border-color: #c00;
+	color: #000;
+}

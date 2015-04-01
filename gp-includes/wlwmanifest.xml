@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<manifest xmlns="http://schemas.microsoft.com/wlw/manifest/weblog">
+
+  <options>
+    <clientType>Goatpress</clientType>
+	<supportsKeywords>Yes</supportsKeywords>
+	<supportsGetTags>Yes</supportsGetTags>
+  </options>
+
+  <weblog>
+    <serviceName>Goatpress</serviceName>
+    <imageUrl>images/wlw/gp-icon.png</imageUrl>
+    <watermarkImageUrl>images/wlw/gp-watermark.png</watermarkImageUrl>
+    <homepageLinkText>View site</homepageLinkText>
+    <adminLinkText>Dashboard</adminLinkText>
+    <adminUrl>
+      <![CDATA[
+			{blog-postapi-url}/../gp-admin/
+		]]>
+    </adminUrl>
+    <postEditingUrl>
+      <![CDATA[
+			{blog-postapi-url}/../gp-admin/post.php?action=edit&post={post-id}
+		]]>
+    </postEditingUrl>
+  </weblog>
+
+  <buttons>
+    <button>
+      <id>0</id>
+      <text>Manage Comments</text>
+      <imageUrl>images/wlw/gp-comments.png</imageUrl>
+      <clickUrl>
+        <![CDATA[
+				{blog-postapi-url}/../gp-admin/edit-comments.php
+			]]>
+      </clickUrl>
+    </button>
+
+  </buttons>
+
+</manifest>

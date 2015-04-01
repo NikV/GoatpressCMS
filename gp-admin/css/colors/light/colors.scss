@@ -1,0 +1,38 @@
+$base-color: #e5e5e5;
+$icon-color: #999;
+$text-color: #333;
+$highlight-color: #04a4cc;
+$notification-color: #d64e07;
+
+$body-background: #f5f5f5;
+
+$menu-highlight-text: #fff;
+$menu-highlight-icon: #ccc;
+$menu-highlight-background: #888;
+
+$menu-bubble-text: #fff;
+$menu-avatar-frame: #aaa;
+$menu-submenu-background: #fff;
+
+$menu-collapse-text: #777;
+$menu-collapse-focus-icon: #555;
+
+@import "../_admin.scss";
+
+/* temporary fix for admin-bar hover color */
+#gpadminbar .ab-top-menu > li:hover > .ab-item,
+#gpadminbar .ab-top-menu > li.hover > .ab-item,
+#gpadminbar > #gp-toolbar > #gp-admin-bar-root-default li:hover span.ab-label,
+#gpadminbar > #gp-toolbar > #gp-admin-bar-top-secondary li.hover span.ab-label,
+#gpadminbar .ab-top-menu > li > .ab-item:focus,
+#gpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#gpadminbar-nojs .ab-top-menu > li.menupop:hover > .ab-item,
+#gpadminbar .ab-top-menu > li.menupop.hover > .ab-item {
+	color: $text-color;
+}
+
+/* Override the theme filter highlight color for this scheme */
+.theme-section.current,
+.theme-filter.current {
+	border-bottom-color: $highlight-color;
+}
