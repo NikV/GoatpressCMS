@@ -8,3 +8,7 @@ You may use Goatpress in your domain (eg. goatpresshelpers.com).
 UPDATE APRIL 1st
 - Development starts today
 - WordPress is now in Jetpack, swtich to Goatpress now! 
+
+UPDATE APRIL 2nd
+- WordPress is confirmed to not be bundled in Jetpack
+- Development of this CMS continues!
