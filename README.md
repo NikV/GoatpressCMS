@@ -12,3 +12,6 @@ UPDATE APRIL 1st
 UPDATE APRIL 2nd
 - WordPress is confirmed to not be bundled in Jetpack
 - Development of this CMS continues!
+
+UPDATE April 5th
+- Development Delayed. 
